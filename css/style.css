@@ -8,7 +8,7 @@ body {
 main {
   width: 60rem;
   height: 10rem;
-  background-color: black;
+  background-color: lightgray;
   box-shadow: 1px 1px 1px 1px gray;
   display: flex;
   justify-content: space-around;
@@ -150,12 +150,12 @@ main {
   position: absolute;
   animation-name: stand;
   animation-delay: 0s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-out;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-play-state: running;
   animation-fill-mode: forwards;
-  animation-duration: 4s;
+  animation-duration: 2s;
   border: 1px dotted white;
  
 }
