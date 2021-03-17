@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  width: 60rem;
+  height: 30rem;
+  background-color: lightgray;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+.first-hamburger {
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.kid {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: white;
+}
