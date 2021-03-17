@@ -4,7 +4,6 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  
 }
 main {
   width: 60rem;
@@ -18,7 +17,7 @@ main {
 .hamburger {
   width: 2rem;
   height: 2rem;
-  background-color:gray;
+  background-color: gray;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -40,7 +39,6 @@ main {
   animation-play-state: running;
   animation-fill-mode: forwards;
   animation-duration: 3s;
-  
 }
 @keyframes go-in {
   from {
@@ -54,48 +52,85 @@ main {
   }
 }
 .first .second {
-    position: absolute;
-    animation-name: turn;
-    animation-delay: 0s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-play-state: running;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
-    
+  position: absolute;
+  animation-name: turn;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+@keyframes turn {
+  from {
+    background-color: red;
+    transform: rotate(0.15turn);
   }
-  @keyframes turn {
-    from {
-      
-      background-color: red;
-      transform: rotate(0.15turn);
-    }
-    to {
-      
-      background-color: lightpink;
-    }
+  to {
+    background-color: lightpink;
   }
-  .first .thirth {
-    position: absolute;
-    animation-name: turn-right;
-    animation-delay: 0s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-play-state: running;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
-    
+}
+.first .thirth {
+  position: absolute;
+  animation-name: turn-right;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+@keyframes turn-right {
+  from {
+    background-color: blue;
+    transform: rotate(-0.15turn);
   }
-  @keyframes turn-right {
-    from {
-      
-      background-color: blue;
-      transform: rotate(-0.15turn);
-    }
-    to {
-      
-      background-color: blueviolet;
-    }
+  to {
+    background-color: blueviolet;
   }
+}
+.second .first {
+  height: 10px;
+  width: 10px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  position: absolute;
+  animation-name: turn-around;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+  border: 1px dotted white;
+}
+@keyframes turn-around {
+  
+  0%{
+      background-color: skyblue;
+      top: 2px;
+  }
+  25%{
+      background-color: teal;
+      bottom:  2px;
+      
+      width: 11px;
+      height: 11px;
+      
+  }
+  50%{
+      background-color: greenyellow;
+      right: 2px;
+  }
+  100%{
+      background-color: green;
+      left: 2px;
+      width: 14px;
+      height: 14px;
+  }
+
+}
+
