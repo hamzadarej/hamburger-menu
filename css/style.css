@@ -7,8 +7,8 @@ body {
 }
 main {
   width: 60rem;
-  height: 30rem;
-  background-color: lightgray;
+  height: 10rem;
+  background-color: black;
   box-shadow: 1px 1px 1px 1px gray;
   display: flex;
   justify-content: space-around;
@@ -23,6 +23,8 @@ main {
   flex-direction: column;
   align-items: center;
   position: relative;
+  box-shadow: beige 1px 1px 1px 1px;
+  
 }
 .kid {
   width: 1.5rem;
@@ -143,4 +145,29 @@ main {
   }
 
 }
+.thirth .second{
+   
+  position: absolute;
+  animation-name: stand;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
+  border: 1px dotted white;
+ 
+}
+@keyframes stand {
+    from {
+        transform: rotate(0.5turn);
+        background-color: khaki;
+    }
+    to {
+        transform: rotate(-05turn);
+        background-color: olive;
+    }
+}
+
 
