@@ -4,24 +4,98 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  
 }
 main {
   width: 60rem;
   height: 30rem;
   background-color: lightgray;
   box-shadow: 1px 1px 1px 1px gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.first-hamburger {
+.hamburger {
   width: 2rem;
   height: 2rem;
-  background-color: black;
+  background-color:gray;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .kid {
   width: 1.5rem;
   height: 0.2rem;
   background-color: white;
 }
+.first .first {
+  position: absolute;
+  animation-name: go-in;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  
+}
+@keyframes go-in {
+  from {
+    top: 0rem;
+    background-color: greenyellow;
+    transform: rotate(0.5turn);
+  }
+  to {
+    top: 100px;
+    background-color: green;
+  }
+}
+.first .second {
+    position: absolute;
+    animation-name: turn;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    
+  }
+  @keyframes turn {
+    from {
+      
+      background-color: red;
+      transform: rotate(0.15turn);
+    }
+    to {
+      
+      background-color: lightpink;
+    }
+  }
+  .first .thirth {
+    position: absolute;
+    animation-name: turn-right;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    
+  }
+  @keyframes turn-right {
+    from {
+      
+      background-color: blue;
+      transform: rotate(-0.15turn);
+    }
+    to {
+      
+      background-color: blueviolet;
+    }
+  }
