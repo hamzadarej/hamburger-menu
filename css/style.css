@@ -6,13 +6,36 @@ body {
   height: 100vh;
 }
 main {
-  width: 60rem;
-  height: 10rem;
+  width: 60vw;
+  height: 10vh;
   background-color: lightgray;
   box-shadow: 1px 1px 1px 1px gray;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  position: absolute;
+  animation-name: move;
+  animation-delay: 0s;
+  animation-timing-function: steps(4,end);
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+}
+@keyframes move {
+    from {
+        top: 1rem;
+        background-color: beige;
+        height: 10rem;
+        
+    }
+    to {
+        top: 30rem;
+        background-color: white;
+        height: 4rem;
+        justify-content: space-evenly;
+    }
 }
 .hamburger {
   width: 2rem;
