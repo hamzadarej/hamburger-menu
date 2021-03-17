@@ -103,8 +103,8 @@ main {
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-play-state: running;
-  animation-fill-mode: both;
-  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-duration: 4s;
   border: 1px dotted white;
 }
 @keyframes turn-around {
@@ -115,19 +115,29 @@ main {
   }
   25%{
       background-color: teal;
-      bottom:  2px;
       
+      right: 2px;
       width: 11px;
       height: 11px;
       
   }
   50%{
-      background-color: greenyellow;
-      right: 2px;
-  }
+    background-color: red;
+    
+    left: 2px;
+    width: 11px;
+    height: 11px;
+    
+}
+ 
+  75%{
+    background-color: greenyellow;
+    
+    bottom: 2px;
+}
   100%{
       background-color: green;
-      left: 2px;
+      
       width: 14px;
       height: 14px;
   }
